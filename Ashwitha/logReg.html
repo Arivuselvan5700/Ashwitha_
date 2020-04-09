@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="logReg.css" />
+  </head>
+
+  <nav
+  class="navbar navbar-expand-lg "
+  style="background-color: rgb(187, 138, 74);width: 100%;"
+>
+  <a
+    class="navbar-brand"
+    href="index.html"
+    style="color: white;font-weight: bolder;font-size: x-large;"
+    >HIDE IN</a
+  >
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="active">
+            <a href="index.html"  style="color: rgb(92, 64, 64);font-size: large;font-weight: 500;;"
+            ;">Home</a>
+          </li>
+    </ul>
+    <ul class="navbar navbar-nav navbar-right">
+        <li>
+          <a href="#" style="color: white;"
+            ><i class="far fa-user"></i>
+            Sign Up</a
+          >
+        </li>
+        <li style="padding-left: 20px;">
+          <a href="login.html" style="color: white;"
+            ><i class="fas fa-sign-in-alt"></i>
+            Login</a
+          >
+        </li>
+      </ul>
+  </div>
+</nav>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+          <div class="card card-signin flex-row my-5">
+            <div class="card-img-left d-none d-md-flex">
+              <!-- Background image for card set in CSS! -->
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Register</h5>
+              <form class="form-signin">
+                <div class="form-label-group">
+                  <input
+                    type="text"
+                    id="inputUserame"
+                    class="form-control"
+                    placeholder="Username"
+                    required
+                    autofocus
+                  />
+                  <label for="inputUserame">Username</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input
+                    type="email"
+                    id="inputEmail"
+                    class="form-control"
+                    placeholder="Email address"
+                    required
+                  />
+                  <label for="inputEmail">Email address</label>
+                </div>
+
+                <hr />
+
+                <div class="form-label-group">
+                  <input
+                    type="password"
+                    id="inputPassword"
+                    class="form-control"
+                    placeholder="Password"
+                    required
+                  />
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input
+                    type="password"
+                    id="inputConfirmPassword"
+                    class="form-control"
+                    placeholder="Password"
+                    required
+                  />
+                  <label for="inputConfirmPassword">Confirm password</label>
+                </div>
+
+                <button
+                  class="btn btn-lg btn-primary btn-block text-uppercase"
+                  type="submit"
+                  style="background-color: rgb(187, 138, 74);"
+                >
+                  Register
+                </button>
+                <a  data-toggle="modal" data-target="#loginModal" href="#" style="color: blue;">
+                        Already Registered? Sign In
+                </a>  
+                <hr class="my-4" />
+                <!-- <button
+                  class="btn btn-lg btn-google btn-block text-uppercase"
+                  type="submit"
+                >
+                  <i class="fab fa-google mr-2"></i> Sign up with Google
+                </button>
+                <button
+                  class="btn btn-lg btn-facebook btn-block text-uppercase"
+                  type="submit"
+                >
+                  <i class="fab fa-facebook-f mr-2"></i> Sign up with Facebook
+                </button> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- !............LOGIN..............! -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <h4>Login</h4>
+              </div>
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                  </div>
+                  <button type="button" class="btn btn-info btn-block btn-round" style="background-color: rgb(187, 138, 74);">Login</button>
+                </form>
+                
+                <div class="text-center text-muted delimiter">or use a social network</div>
+                <div class="d-flex justify-content-center social-buttons">
+                  <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook" style="margin-right: 10px;margin-left: 10px;">
+                    <i class="fab fa-facebook"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </button>
+                </di>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <script>$(document).ready(function() {             $('#loginModal').modal('show');
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+          });</script>
